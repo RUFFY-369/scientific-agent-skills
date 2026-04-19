@@ -118,6 +118,7 @@ Use your environment's HTTP fetch tool to call REST endpoints:
 | Cursor | No dedicated fetch tool | `curl` via `run_terminal_cmd` |
 | Codex CLI | No dedicated fetch tool | `curl` via `shell` |
 | Cline | No dedicated fetch tool | `curl` via `execute_command` |
+| Hermes Agent | None | `curl` via `bash` |
 
 If the fetch tool fails, fall back to `curl` via whatever shell tool is available.
 
