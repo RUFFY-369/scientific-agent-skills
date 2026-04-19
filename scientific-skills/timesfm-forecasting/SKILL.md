@@ -676,6 +676,13 @@ timeline
 - `google/timesfm-2.0-500m-pytorch` (archived)
 - `google/timesfm-1.0-200m-pytorch` (archived)
 
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
+
 ## Resources
 
 - **Paper**: [A Decoder-Only Foundation Model for Time-Series Forecasting](https://arxiv.org/abs/2310.10688) (ICML 2024)

@@ -123,6 +123,13 @@ The reference files contain detailed information about each capability area. Loa
 - **ML pipelines**: Reference `references/machine_learning.md`
 - **File I/O**: Consult `references/io_operations.md`
 
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
+
 ## Best Practices
 
 1. **Use HDF5 or Apache Arrow formats** for optimal performance with large datasets

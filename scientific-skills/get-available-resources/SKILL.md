@@ -248,6 +248,13 @@ All other functionality uses Python standard library modules (json, os, platform
 - **Linux**: Full support including NVIDIA (nvidia-smi) and AMD (rocm-smi) GPU detection
 - **Windows**: Full support including NVIDIA GPU detection
 
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
+
 ## Best Practices
 
 1. **Run early**: Execute resource detection at the start of projects or before major computational tasks

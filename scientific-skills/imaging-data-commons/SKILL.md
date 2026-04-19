@@ -751,6 +751,13 @@ See `references/use_cases.md` for complete end-to-end workflow examples includin
 - Previewing data in browser before downloading
 - License-aware batch downloads for commercial use
 
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
+
 ## Best Practices
 
 - **Verify IDC version before generating responses** - Always call `client.get_idc_version()` at the start of a session to confirm you're using the expected data version (currently v23). If using an older version, recommend `pip install --upgrade idc-index`

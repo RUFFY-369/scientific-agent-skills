@@ -13,7 +13,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-K--Dense_Inc.-0A66C2?logo=linkedin)](https://www.linkedin.com/company/k-dense-inc)
 [![YouTube](https://img.shields.io/badge/YouTube-K--Dense_Inc.-FF0000?logo=youtube)](https://www.youtube.com/@K-Dense-Inc)
 
-A comprehensive collection of **133 ready-to-use scientific and research skills** (covering cancer genomics, drug-target binding, molecular dynamics, RNA velocity, geospatial science, time series forecasting, 78+ scientific databases, and more) for any AI agent that supports the open [Agent Skills](https://agentskills.io/) standard, created by [K-Dense](https://k-dense.ai). Works with **Cursor, Claude Code, Codex, and more**. Transform your AI agent into a research assistant capable of executing complex multi-step scientific workflows across biology, chemistry, medicine, and beyond.
+A comprehensive collection of **133 ready-to-use scientific and research skills** (covering cancer genomics, drug-target binding, molecular dynamics, RNA velocity, geospatial science, time series forecasting, 78+ scientific databases, and more) for any AI agent that supports the open [Agent Skills](https://agentskills.io/) standard, created by [K-Dense](https://k-dense.ai). Works with **Cursor, Claude Code, Hermes Agent, Codex, and more**. Transform your AI agent into a research assistant capable of executing complex multi-step scientific workflows across biology, chemistry, medicine, and beyond.
 
 ---
 
@@ -118,7 +118,7 @@ Install Scientific Agent Skills with a single command:
 npx skills add K-Dense-AI/scientific-agent-skills
 ```
 
-This is the official standard approach for installing Agent Skills across **all platforms**, including **Claude Code**, **Claude Cowork**, **Codex**, **Gemini CLI**, **Cursor**, and any other agent that supports the open [Agent Skills](https://agentskills.io/) standard.
+This is the official standard approach for installing Agent Skills across **all platforms**, including **Hermes Agent**, **Claude Code**, **Claude Cowork**, **Codex**, **Gemini CLI**, **Cursor**, and any other agent that supports the open [Agent Skills](https://agentskills.io/) standard.
 
 ### Option 2: GitHub CLI (`gh skill`)
 
@@ -134,6 +134,7 @@ gh skill install K-Dense-AI/scientific-agent-skills scanpy
 # Target a specific agent host
 gh skill install K-Dense-AI/scientific-agent-skills --agent cursor
 gh skill install K-Dense-AI/scientific-agent-skills --agent claude-code
+gh skill install K-Dense-AI/scientific-agent-skills --agent hermes
 gh skill install K-Dense-AI/scientific-agent-skills --agent codex
 gh skill install K-Dense-AI/scientific-agent-skills --agent gemini
 ```
@@ -211,7 +212,7 @@ Scientific Agent Skills is powered by **50+ incredible open source projects** ma
 
 - **Python**: 3.11+ (3.12+ recommended for best compatibility)
 - **uv**: Python package manager (required for installing skill dependencies)
-- **Client**: Any agent that supports the [Agent Skills](https://agentskills.io/) standard (Cursor, Claude Code, Gemini CLI, Codex, etc.)
+- **Client**: Any agent that supports the [Agent Skills](https://agentskills.io/) standard (Hermes, Cursor, Claude Code, Gemini CLI, Codex, etc.)
 - **System**: macOS, Linux, or Windows with WSL2
 - **Dependencies**: Automatically handled by individual skills (check `SKILL.md` files for specific requirements)
 

@@ -352,3 +352,11 @@ Load specific reference files as needed using the Read tool to access detailed f
 - GitHub Repository: https://github.com/neuropsychology/NeuroKit
 - Publication: Makowski et al. (2021). NeuroKit2: A Python toolbox for neurophysiological signal processing. Behavior Research Methods. https://doi.org/10.3758/s13428-020-01516-y
 
+
+
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.

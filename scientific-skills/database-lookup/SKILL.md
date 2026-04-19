@@ -478,3 +478,11 @@ Read the relevant reference file before making any API call.
 | US Census | `references/census.md` | Population, housing, economic surveys |
 | Eurostat | `references/eurostat.md` | EU statistics |
 | WHO GHO | `references/who.md` | Global health indicators |
+
+
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.

@@ -160,3 +160,11 @@ If the user asks to profile their own thinking (using the conversation history a
 [AHK Strategies](https://ahkstrategies.net) — AI Horizon Knowledge
 Full platform: [themindbook.app](https://themindbook.app)
 Research: [DHDNA Paper (DOI: 10.5281/zenodo.18736629)](https://doi.org/10.5281/zenodo.18736629)
+
+
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.

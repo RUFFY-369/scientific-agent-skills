@@ -272,6 +272,13 @@ model.learn(total_timesteps=10000)
 - **Unstable training**: Try different algorithms, tune hyperparameters, or check reward scaling
 - **Import errors**: Ensure `stable_baselines3` is installed: `uv pip install stable-baselines3[extra]`
 
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
+
 ## Resources
 
 ### scripts/

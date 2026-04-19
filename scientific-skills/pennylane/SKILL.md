@@ -201,6 +201,13 @@ For comprehensive coverage of specific topics, consult the reference files:
 - **Optimization**: `references/optimization.md` - Optimizers, gradients, variational algorithms
 - **Advanced**: `references/advanced_features.md` - Templates, transforms, JIT compilation, noise
 
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
+
 ## Best Practices
 
 1. **Start with simulators** - Test on `default.qubit` before deploying to hardware

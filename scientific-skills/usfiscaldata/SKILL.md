@@ -157,3 +157,11 @@ resp = requests.get(f"{BASE_URL}/v1/accounting/dts/deposits_withdrawals_operatin
 - **[datasets-securities.md](references/datasets-securities.md)** — Treasury auctions, savings bonds, SLGS, buybacks
 - **[response-format.md](references/response-format.md)** — Response objects, error handling, pagination, response codes
 - **[examples.md](references/examples.md)** — Python, R, and pandas code examples for common use cases
+
+
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.

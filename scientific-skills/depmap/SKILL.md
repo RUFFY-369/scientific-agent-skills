@@ -281,6 +281,13 @@ def co_essentiality(gene_effect_df, target_gene, top_n=20):
 
 Download all files from: https://depmap.org/portal/download/all/
 
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
+
 ## Best Practices
 
 - **Use Chronos scores** (not DEMETER2) for current CRISPR analyses — better controlled for cutting efficiency

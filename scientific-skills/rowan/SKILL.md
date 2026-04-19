@@ -1085,3 +1085,11 @@ if not wf.done():
 Use Rowan when your workflow requires cloud execution for molecular-design tasks, especially when you want one unified API and consistent result handling across small-molecule modeling, proteins, docking, ADME prediction, and ML structure generation.
 
 Rowan is a molecular-design workflow platform, not just a remote chemistry engine. It handles infrastructure scaling, result persistence, and multi-step pipeline orchestration so you can focus on science.
+
+
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
