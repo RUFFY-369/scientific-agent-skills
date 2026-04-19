@@ -78,13 +78,6 @@ The graph contains several key relationship types including:
 - `disease_phenotype`: Clinical signs and symptoms
 - `gwas`: Genome-wide association studies evidence
 
-## Hermes Agent Integration
-
-The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
-- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
-- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
-- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
-
 ## Best Practices
 
 1. **Use specific IDs:** When using `get_neighbors`, ensure you have the correct ID from `search_nodes`.

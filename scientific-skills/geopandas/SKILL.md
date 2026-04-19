@@ -236,13 +236,6 @@ buildings_near_roads = buildings[buildings.geometry.distance(roads.union_all()) 
 5. **Batch operations**: Vectorized operations are much faster than iterating rows
 6. **Use appropriate CRS**: Projected CRS for area/distance, geographic for visualization
 
-## Hermes Agent Integration
-
-The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
-- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
-- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
-- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
-
 ## Best Practices
 
 1. **Always check CRS** before spatial operations

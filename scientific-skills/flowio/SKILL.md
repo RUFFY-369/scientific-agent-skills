@@ -526,13 +526,6 @@ for i, name in enumerate(fluoro_names):
     print(f"  Std Dev: {channel_data.std():.2f}")
 ```
 
-## Hermes Agent Integration
-
-The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
-- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
-- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
-- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
-
 ## Best Practices
 
 1. **Memory Efficiency:** Use `only_text=True` when event data is not needed
