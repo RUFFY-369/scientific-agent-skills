@@ -544,16 +544,7 @@ sns.barplot(data=df, x='treatment', y='response',
 # "Error bars represent 95% confidence intervals"
 ```
 
-##
-
-## Hermes Agent Integration
-
-The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
-- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
-- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
-- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
-
-## Best Practices for Publication-Ready Seaborn Figures
+#### Best Practices for Publication-Ready Seaborn Figures
 
 1. **Always set publication theme first:**
    ```python
@@ -784,3 +775,10 @@ Before submitting figures, verify:
 
 Use this skill to ensure scientific figures meet the highest publication standards while remaining accessible to all readers.
 
+
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.

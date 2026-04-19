@@ -697,13 +697,6 @@ Multimodal approaches to acute and chronic pain using evidence-based interventio
 - Improved quality of life
 - Return to work or meaningful activities
 
-## Hermes Agent Integration
-
-The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
-- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
-- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
-- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
-
 ## Best Practices
 
 ### Brevity and Focus (HIGHEST PRIORITY)
@@ -1450,4 +1443,145 @@ sudo tlmgr install tcolorbox tikz pgf
 - Comment out custom font lines in .sty file
 - Or install specified fonts on your system
 
-#
+### Best Practices for Styled Documents
+
+1. **Appropriate Box Usage**
+   - Match box type to content purpose (goals→green, warnings→yellow/red)
+   - Don't overuse boxes; reserve for truly important information
+   - Keep box content concise and focused
+
+2. **Visual Hierarchy**
+   - Use section styling for structure
+   - Boxes for emphasis and organization
+   - Tables for comparative data
+   - Lists for sequential or grouped items
+
+3. **Color Consistency**
+   - Stick to defined color scheme
+   - Use `\textcolor{primaryblue}{\textbf{Text}}` for emphasis
+   - Maintain consistent meaning (red=warning, green=goals)
+
+4. **White Space**
+   - Don't overcrowd pages with boxes
+   - Use `\vspace{0.5cm}` between major sections
+   - Allow breathing room around colored elements
+
+5. **Professional Appearance**
+   - Maintain readability as top priority
+   - Ensure sufficient contrast for accessibility
+   - Test print output in grayscale
+   - Keep styling consistent throughout document
+
+6. **Table Formatting**
+   - Use `\tableheadercolor` for all header rows
+   - Apply `\tablerowcolor` to alternating rows in tables >3 rows
+   - Keep column widths balanced
+   - Use `\small\sffamily` for large tables
+
+### Example: Styled Treatment Plan Structure
+
+```latex
+% !TEX program = xelatex
+\documentclass[11pt,letterpaper]{article}
+\usepackage{medical_treatment_plan}
+\usepackage{natbib}
+
+\title{\textbf{Comprehensive Treatment Plan}\\
+\large{Patient-Centered Care Strategy}}
+\author{Multidisciplinary Care Team}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Patient Information}
+\begin{patientinfo}
+  % Demographics table
+\end{patientinfo}
+
+\section{Executive Summary}
+\begin{keybox}[Plan Overview]
+  % Key highlights
+\end{keybox}
+
+\section{Treatment Goals}
+\begin{goalbox}[SMART Goals - 3 Months]
+  \begin{medtable}{Primary Treatment Targets}
+    % Goals table with colored headers
+  \end{medtable}
+\end{goalbox}
+
+\section{Medication Plan}
+\begin{infobox}[Titration Schedule]
+  % Medication instructions
+\end{infobox}
+
+\begin{warningbox}[Critical Decision Point]
+  % Important safety information
+\end{warningbox}
+
+\section{Emergency Protocols}
+\begin{emergencybox}
+  % Emergency contacts
+\end{emergencybox}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}
+```
+
+### Benefits of Professional Styling
+
+**Clinical Practice:**
+- Faster information scanning during patient encounters
+- Clear visual hierarchy for critical vs. routine information
+- Professional appearance suitable for patient-facing documents
+- Color-coded sections reduce cognitive load
+
+**Educational Use:**
+- Enhanced readability for teaching materials
+- Visual differentiation of concept types (goals, warnings, procedures)
+- Professional presentation for case discussions
+- Print and digital-ready formats
+
+**Documentation Quality:**
+- Modern, polished appearance
+- Maintains clinical accuracy while improving aesthetics
+- Standardized formatting across treatment plans
+- Easy to customize for institutional branding
+
+**Patient Engagement:**
+- More approachable than dense text documents
+- Color coding helps patients identify key sections
+- Professional appearance builds trust
+- Clear organization facilitates understanding
+
+## Ethical Considerations
+
+### Informed Consent
+All treatment plans should involve patient understanding and voluntary agreement to proposed interventions.
+
+### Cultural Sensitivity
+Treatment plans must respect diverse cultural beliefs, health practices, and communication styles.
+
+### Health Equity
+Consider social determinants of health, access barriers, and health disparities when developing plans.
+
+### Privacy Protection
+Maintain strict HIPAA compliance; de-identify all protected health information in shared documents.
+
+### Autonomy and Beneficence
+Balance medical recommendations with patient autonomy and values while promoting patient welfare.
+
+## License
+
+Part of the Claude Scientific Writer project. See main LICENSE file.
+
+
+
+## Hermes Agent Integration
+
+The Hermes Agent supports this skill as an external reference. When running within a Hermes session:
+- **Expert Patterns**: You can ask Hermes to "read the SKILL.md" of this domain to implement validated scientific workflows.
+- **Reference Access**: Hermes can directly access the `references/` and `scripts/` folders in this directory to handle complex API calls or parameter configurations.
+- **Tools**: Use Hermes' native `bash` and `read_file` tools to execute any Python scripts provided in the `examples/` directory.
